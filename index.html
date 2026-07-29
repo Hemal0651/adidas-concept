@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adidas Elevate — Next-Gen 3D Lattice Performance</title>
+  <meta name="description" content="Experience peak comfort and 3D-printed lattice cushioning with the Adidas Elevate performance collection.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Design System Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="theme-phantom">
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="mainHeader">
+    <div class="header-container">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="brand-logo" id="brandLogo" aria-label="Adidas Homepage">
+        <img src="assets/logo_wh.png" alt="Adidas Logo" id="headerLogoImg">
+      </a>
+
+      <!-- Center Navigation Links (Desktop) -->
+      <nav class="main-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item active">
+            <a href="#" class="nav-link" id="navHome">Home</a>
+            <span class="active-dot"></span>
+          </li>
+          <li class="nav-item">
+            <a href="#store" class="nav-link" id="navStore">Store</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link" id="navAbout">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" id="navContact">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions (Cart + Hamburger) -->
+      <div class="header-actions">
+        <button class="cart-btn" id="cartToggleBtn" aria-label="Shopping Cart">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="cart-icon-svg">
+            <path d="M4.50938 10.4343C4.7433 8.79689 4.86026 7.97818 5.42419 7.48909C5.98812 7 6.81514 7 8.46918 7H9H15H15.5308C17.1849 7 18.0119 7 18.5758 7.48909C19.1397 7.97818 19.2567 8.79689 19.4906 10.4343L20.3478 16.4343C20.6512 18.5586 20.803 19.6208 20.2049 20.3104C19.6068 21 18.5339 21 16.388 21H16H8H7.61204C5.46614 21 4.3932 21 3.79511 20.3104C3.19703 19.6208 3.34877 18.5586 3.65224 16.4343L4.50938 10.4343Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            <path d="M9 11V5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5V11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="cart-badge" id="cartCountBadge">2</span>
+        </button>
+
+        <!-- Hamburger Menu Button (Mobile Only) -->
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Overlay -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay" aria-hidden="true">
+    <div class="mobile-nav-panel">
+      <!-- Mobile Nav Header -->
+      <div class="mobile-nav-header">
+        <img src="assets/logo_svg.svg" alt="Adidas Logo" class="mobile-nav-logo" id="mobileNavLogo">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close Menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Nav Links -->
+      <nav class="mobile-nav-links" aria-label="Mobile Navigation">
+        <a href="#" class="mobile-nav-link" data-close-nav>
+          <div class="mobile-nav-link-left">
+            <i class="fa-solid fa-house mobile-nav-icon"></i>
+            <span>Home</span>
+          </div>
+          <i class="fa-solid fa-chevron-right mobile-nav-arrow"></i>
+        </a>
+        <a href="#store" class="mobile-nav-link" data-close-nav>
+          <div class="mobile-nav-link-left">
+            <i class="fa-solid fa-bag-shopping mobile-nav-icon"></i>
+            <span>Store</span>
+          </div>
+          <i class="fa-solid fa-chevron-right mobile-nav-arrow"></i>
+        </a>
+        <a href="#about" class="mobile-nav-link" data-close-nav>
+          <div class="mobile-nav-link-left">
+            <i class="fa-solid fa-signal mobile-nav-icon"></i>
+            <span>About Us</span>
+          </div>
+          <i class="fa-solid fa-chevron-right mobile-nav-arrow"></i>
+        </a>
+        <a href="#contact" class="mobile-nav-link" data-close-nav>
+          <div class="mobile-nav-link-left">
+            <i class="fa-regular fa-envelope mobile-nav-icon"></i>
+            <span>Contact Us</span>
+          </div>
+          <i class="fa-solid fa-chevron-right mobile-nav-arrow"></i>
+        </a>
+      </nav>
+
+      <!-- Mobile Colorway Selector -->
+      <div class="mobile-nav-colorways">
+        <span class="mobile-nav-colorways-label">COLORWAYS</span>
+        <div class="mobile-nav-dots">
+          <button class="color-dot-btn active" data-variant="phantom" data-tooltip="Elevate Phantom" aria-label="Elevate Phantom">
+            <span class="dot-fill" style="background: #1E2024;"></span>
+            <span class="active-ring"></span>
+          </button>
+          <button class="color-dot-btn" data-variant="dune" data-tooltip="Elevate Dune" aria-label="Elevate Dune">
+            <span class="dot-fill" style="background: #d6985e;"></span>
+          </button>
+          <button class="color-dot-btn" data-variant="slate" data-tooltip="Elevate Slate" aria-label="Elevate Slate">
+            <span class="dot-fill" style="background: #738091;"></span>
+          </button>
+          <button class="color-dot-btn" data-variant="frost" data-tooltip="Elevate Frost" aria-label="Elevate Frost">
+            <span class="dot-fill" style="background: #FFFFFF;"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile CTA -->
+      <div class="mobile-nav-cta">
+        <button class="btn-reserve mobile-cta-btn" id="mobileReserveBtn">RESERVE NOW</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       HERO MAIN SECTION (CANVAS BACKGROUND LAYERS + OVERLAYS)
+       ========================================================================== -->
+  <section class="hero-section" id="heroSection">
+
+    <!-- 1. Full-Screen Background Image Layers for Each Colorway -->
+    <!-- Desktop backgrounds -->
+    <div class="hero-bg-layer active" id="bgPhantom"
+      style="background-image: url('assets/Elevate Phantom.png');"
+      data-mobile-bg="assets/Elevate Phantom Moble.png"></div>
+    <div class="hero-bg-layer" id="bgDune"
+      style="background-image: url('assets/Elevate Dune.png');"
+      data-mobile-bg="assets/Elevate Dune Mobile.png"></div>
+    <div class="hero-bg-layer" id="bgSlate"
+      style="background-image: url('assets/Elevate Slate.png');"
+      data-mobile-bg="assets/Elevate Slate Mobile.png"></div>
+    <div class="hero-bg-layer" id="bgFrost"
+      style="background-image: url('assets/Elevate Frost.png');"
+      data-mobile-bg="assets/Elevate Frost Mobile.png"></div>
+
+    <!-- 2. Interactive Foreground UI Overlay Container -->
+    <div class="hero-content-wrapper">
+
+      <!-- Top Sub-headline (Always Fixed Text for All Themes) -->
+      <div class="hero-subheadline-wrapper">
+        <h2 class="hero-subheadline" id="heroSubheadline">T H E &nbsp; P U R E<span class="desktop-space">&nbsp; &nbsp;</span><br class="mobile-br">C O M F O R T &nbsp; I S &nbsp; H E R E .</h2>
+      </div>
+
+      <!-- Bottom Control Toolbar -->
+      <div class="hero-bottom-bar">
+
+        <!-- Slide Progress Number Indicator (01 / 02) -->
+        <div class="slide-indicator">
+          <span class="slide-num active" id="slideNum01">01</span>
+          <div class="slide-track" id="slideTrack">
+            <div class="slide-progress" id="slideProgress"></div>
+          </div>
+          <span class="slide-num" id="slideNum02">02</span>
+        </div>
+
+        <!-- Center CTA Buttons -->
+        <div class="hero-cta-group">
+          <button class="btn-reserve" id="btnReserve">RESERVE NOW</button>
+          <button class="btn-learn" id="btnLearn">LEARN MORE</button>
+        </div>
+
+        <!-- Dynamic Variant Title Label (Bottom Right) -->
+        <div class="variant-label-wrapper">
+          <h3 class="variant-label-text" id="variantLabelText">E L E V A T E &nbsp; P H A N T O M</h3>
+        </div>
+
+        <!-- Right Side Vertical Color Variant Picker Dots
+             NOTE: Absolutely positioned on desktop (right side).
+             On mobile: static flow, ordered via CSS between label & buttons. -->
+        <div class="color-picker-column" aria-label="Select Shoe Colorway">
+          <button class="color-dot-btn active" data-variant="phantom" data-tooltip="Elevate Phantom" aria-label="Elevate Phantom">
+            <span class="dot-fill" style="background: #1E2024;"></span>
+            <span class="active-ring"></span>
+          </button>
+          <button class="color-dot-btn" data-variant="dune" data-tooltip="Elevate Dune" aria-label="Elevate Dune">
+            <span class="dot-fill" style="background: #d6985e;"></span>
+          </button>
+          <button class="color-dot-btn" data-variant="slate" data-tooltip="Elevate Slate" aria-label="Elevate Slate">
+            <span class="dot-fill" style="background: #738091;"></span>
+          </button>
+          <button class="color-dot-btn" data-variant="frost" data-tooltip="Elevate Frost" aria-label="Elevate Frost">
+            <span class="dot-fill" style="background: #FFFFFF;"></span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ==========================================================================
+       DEEP DIVE SECTION: TECH INNOVATIONS
+       ========================================================================== -->
+  <!-- ==========================================================================
+       DEEP DIVE SECTION: REINVENTING HUMAN LOCOMOTION (EXACT REFERENCE MATCH)
+       ========================================================================== -->
+  <section class="deep-dive-section" id="learnSection">
+    <div class="locomotion-ref-container">
+      
+      <!-- Left Column: Headline & 3 Numbered Horizontal Cards -->
+      <div class="locomotion-left-content">
+        
+        <!-- Header Tag & Title -->
+        <div class="locomotion-header">
+          <div class="locomotion-tag-wrapper">
+            <span class="locomotion-gold-line"></span>
+            <span class="locomotion-tag-text">ENGINEERED FOR SUPREMACY</span>
+          </div>
+          <h2 class="locomotion-hero-title">
+            Reinventing<br>
+            <span class="highlight-gold">Human Locomotion</span>
+          </h2>
+          <p class="locomotion-subtitle">Combining 3D-printed liquid resin lattice soles with adaptive Primeknit uppers for unprecedented energy return.</p>
+        </div>
+
+        <!-- 3 Numbered Horizontal Cards -->
+        <div class="locomotion-cards-stack">
+          
+          <!-- Card 01 -->
+          <div class="loco-card">
+            <div class="loco-card-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+            <div class="loco-card-body">
+              <h4 class="loco-card-title">4D Lattice Midsole</h4>
+              <p class="loco-card-desc">Digital light synthesis creates a precision lattice structure tuned for targeted cushioning and forward propulsion.</p>
+            </div>
+            <span class="loco-card-num">01</span>
+          </div>
+
+          <!-- Card 02 -->
+          <div class="loco-card">
+            <div class="loco-card-icon"><i class="fa-solid fa-layer-group"></i></div>
+            <div class="loco-card-body">
+              <h4 class="loco-card-title">Zoned Primeknit Upper</h4>
+              <p class="loco-card-desc">Seamless, lightweight upper provides structured support where you need it and flex where you move.</p>
+            </div>
+            <span class="loco-card-num">02</span>
+          </div>
+
+          <!-- Card 03 -->
+          <div class="loco-card">
+            <div class="loco-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="loco-card-body">
+              <h4 class="loco-card-title">Continental™ Grip</h4>
+              <p class="loco-card-desc">High-performance rubber outsole delivers extraordinary traction in both wet and dry conditions.</p>
+            </div>
+            <span class="loco-card-num">03</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Right Column: Hero Shoe Stage with 3 Leader Line Callouts -->
+      <div class="locomotion-right-stage">
+        
+        <!-- Hero Shoe Image (Levitating Floating Animation) -->
+        <img src="assets/Locomotion.png" alt="Adidas Elevate 4D Locomotion Shoe" class="loco-shoe-ref">
+
+        <!-- Callout 1: ZONED SUPPORT (Top) -->
+        <div class="loco-callout callout-zoned">
+          <div class="callout-box">
+            <h5 class="callout-title">ZONED SUPPORT</h5>
+            <p class="callout-desc">Adaptive zones for breathability and flexible movement.</p>
+          </div>
+          <svg class="callout-line-svg" width="90" height="50" viewBox="0 0 90 50">
+            <polyline points="0,10 50,10 82,42" fill="none" stroke="#a98452" stroke-width="1.5" opacity="0.85"/>
+            <circle cx="82" cy="42" r="4" fill="#a98452" />
+            <circle cx="82" cy="42" r="8" fill="none" stroke="#a98452" stroke-width="1" opacity="0.5"/>
+          </svg>
+        </div>
+
+        <!-- Callout 2: 4D LATTICE (Mid Left) -->
+        <div class="loco-callout callout-lattice">
+          <div class="callout-box">
+            <h5 class="callout-title">4D LATTICE</h5>
+            <p class="callout-desc">Engineered lattice geometry maximizes energy return.</p>
+          </div>
+          <svg class="callout-line-svg" width="90" height="40" viewBox="0 0 90 40">
+            <polyline points="0,15 50,15 82,32" fill="none" stroke="#a98452" stroke-width="1.5" opacity="0.85"/>
+            <circle cx="82" cy="32" r="4" fill="#a98452" />
+            <circle cx="82" cy="32" r="8" fill="none" stroke="#a98452" stroke-width="1" opacity="0.5"/>
+          </svg>
+        </div>
+
+        <!-- Callout 3: CONTINENTAL RUBBER (Bottom Right) -->
+        <div class="loco-callout callout-continental">
+          <svg class="callout-line-svg" width="90" height="50" viewBox="0 0 90 50">
+            <polyline points="90,40 40,40 10,12" fill="none" stroke="#a98452" stroke-width="1.5" opacity="0.85"/>
+            <circle cx="10" cy="12" r="4" fill="#a98452" />
+            <circle cx="10" cy="12" r="8" fill="none" stroke="#a98452" stroke-width="1" opacity="0.5"/>
+          </svg>
+          <div class="callout-box">
+            <h5 class="callout-title">CONTINENTAL™ RUBBER</h5>
+            <p class="callout-desc">Superior grip and durability across every surface.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       BESTSELLERS GRID SECTION
+       ========================================================================== -->
+  <section class="bestsellers-section" id="bestsellers">
+    <div class="bestsellers-container">
+      <div class="bestsellers-header">
+        <h2 class="bestsellers-title">BESTSELLERS</h2>
+        <a href="#store" class="see-all-link">SEE ALL <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="bestsellers-grid">
+        
+        <!-- Card 1 -->
+        <div class="bestseller-card">
+          <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+          <span class="bs-badge">NEW</span>
+          <div class="bs-img-wrapper">
+            <img src="assets/Ele_vortex3.png" alt="Elevate Vortex 3">
+          </div>
+          <div class="bs-info">
+            <h3 class="bs-name">Elevate Vortex 3</h3>
+            <p class="bs-desc">Universal Performance Running</p>
+            <div class="bs-bottom-row">
+              <span class="bs-price">$280.00</span>
+              <button class="bs-cart-btn" aria-label="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bestseller-card">
+          <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+          <span class="bs-badge sale-badge">TOP RATED</span>
+          <div class="bs-img-wrapper">
+            <img src="assets/Ele_pulsepro.png" alt="Elevate Pulse Pro">
+          </div>
+          <div class="bs-info">
+            <h3 class="bs-name">Elevate Pulse Pro</h3>
+            <p class="bs-desc">Desert Distance Cushion</p>
+            <div class="bs-bottom-row">
+              <span class="bs-price">$310.00</span>
+              <button class="bs-cart-btn" aria-label="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bestseller-card">
+          <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+          <span class="bs-badge">NEW</span>
+          <div class="bs-img-wrapper">
+            <img src="assets/Ele_cityflow.png" alt="Elevate City Flow">
+          </div>
+          <div class="bs-info">
+            <h3 class="bs-name">Elevate City Flow</h3>
+            <p class="bs-desc">Urban Stealth Everyday</p>
+            <div class="bs-bottom-row">
+              <span class="bs-price">$270.00</span>
+              <button class="bs-cart-btn" aria-label="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bestseller-card">
+          <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+          <span class="bs-badge sale-badge">-15% OFF</span>
+          <div class="bs-img-wrapper">
+            <img src="assets/Ele_courthigh.png" alt="Elevate Court High">
+          </div>
+          <div class="bs-info">
+            <h3 class="bs-name">Elevate Court High</h3>
+            <p class="bs-desc">Glacial High-Top Edition</p>
+            <div class="bs-bottom-row">
+              <span class="bs-price">$290.00 <span class="bs-old-price">$340</span></span>
+              <button class="bs-cart-btn" aria-label="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION DIVIDER 1: INFINITE SLANTED MARQUEE TICKER TAPE
+       ========================================================================== -->
+  <div class="marquee-divider-strip">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>ADIDAS ELEVATE 4D</span> <span class="accent-slash">///</span>
+        <span>FUTURE OF SPEED</span> <span class="accent-slash">///</span>
+        <span>LIGHTSPEED PROPULSION</span> <span class="accent-slash">///</span>
+        <span>DIGITAL LIGHT SYNTHESIS</span> <span class="accent-slash">///</span>
+        <span>ULTRA-COMFORT LATTICE</span> <span class="accent-slash">///</span>
+        <span>ADIDAS ELEVATE 4D</span> <span class="accent-slash">///</span>
+        <span>FUTURE OF SPEED</span> <span class="accent-slash">///</span>
+        <span>LIGHTSPEED PROPULSION</span> <span class="accent-slash">///</span>
+        <span>DIGITAL LIGHT SYNTHESIS</span> <span class="accent-slash">///</span>
+        <span>ULTRA-COMFORT LATTICE</span> <span class="accent-slash">///</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       DYNAMIC STAGGERED COLORWAYS SHOWCASE ("EVERYONE I ADIDAS IT.")
+       ========================================================================== -->
+  <section class="colorways-showcase-section" id="colorways">
+    <div class="colorways-container">
+      
+      <!-- Top Title & Subtitle Row (Right-aligned like Reference Image) -->
+      <div class="colorways-header-row">
+        <span class="colorways-sublabel">Everyone</span>
+        <h2 class="colorways-main-title">I <span class="highlight-brand">Adidas</span> it.</h2>
+      </div>
+
+      <div class="colorways-wrapper">
+        <!-- 3 Staggered Colorful Shoe Cards -->
+        <div class="colorways-cards-grid">
+          
+          <!-- Card 1: Crimson Red -->
+          <div class="color-card card-crimson">
+            <img src="assets/logo_wh.png" alt="Adidas Logo" class="card-brand-logo">
+            <span class="card-num-watermark">1</span>
+            <span class="card-bg-text">4D</span>
+            <div class="color-card-img-wrapper">
+              <img src="assets/shoe_crimson.png" alt="Elevate Crimson">
+            </div>
+            <div class="color-card-body">
+              <h3 class="color-card-title">Elevate Crimson</h3>
+              <div class="color-card-stars">★★★★★</div>
+              <div class="color-card-bottom">
+                <span class="color-card-price">$290</span>
+                <button class="color-add-btn" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Amber Gold (Staggered Raised) -->
+          <div class="color-card card-amber raised-card">
+            <img src="assets/logo_wh.png" alt="Adidas Logo" class="card-brand-logo">
+            <span class="card-num-watermark">2</span>
+            <span class="card-bg-text">4D</span>
+            <div class="color-card-img-wrapper">
+              <img src="assets/shoe_amber.png" alt="Elevate Amber">
+            </div>
+            <div class="color-card-body">
+              <h3 class="color-card-title">Elevate Amber</h3>
+              <div class="color-card-stars">★★★★★</div>
+              <div class="color-card-bottom">
+                <span class="color-card-price">$280</span>
+                <button class="color-add-btn" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Cobalt Navy -->
+          <div class="color-card card-cobalt">
+            <img src="assets/logo_wh.png" alt="Adidas Logo" class="card-brand-logo">
+            <span class="card-num-watermark">3</span>
+            <span class="card-bg-text">4D</span>
+            <div class="color-card-img-wrapper">
+              <img src="assets/shoe_cobalt.png" alt="Elevate Cobalt">
+            </div>
+            <div class="color-card-body">
+              <h3 class="color-card-title">Elevate Cobalt</h3>
+              <div class="color-card-stars">★★★★★</div>
+              <div class="color-card-bottom">
+                <span class="color-card-price">$310</span>
+                <button class="color-add-btn accent-btn" aria-label="Add to cart"><i class="fa-solid fa-plus"></i></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Vertical Rotated Text Accent -->
+        <div class="vertical-text-accent">Colors</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION DIVIDER 2: GEOMETRIC BRAND CONNECTOR NODE
+       ========================================================================== -->
+  <div class="brand-connector-divider">
+    <div class="connector-line"></div>
+    <div class="connector-badge">
+      <img src="assets/logo_wh.png" alt="Adidas Trefoil Logo" class="connector-logo">
+    </div>
+    <div class="connector-line"></div>
+  </div>
+
+  <!-- ==========================================================================
+       CATEGORY BANNERS 2x2 GRID ("RUNNING", "BASKETBALL", "TRAINING", "LIFESTYLE")
+       ========================================================================== -->
+  <section class="category-grid-section">
+    <div class="lifestyle-layout-container">
+      
+      <!-- Left Column: Typography & Action Button -->
+      <div class="lifestyle-text-panel">
+        <h2 class="lifestyle-main-title">NOT JUST SHOES<br><span class="highlight-gold">A LIFESTYLE</span></h2>
+        <p class="lifestyle-main-desc">Every pair is designed to match your drive, your goals, and your right comfort. Experience next-gen lattice performance engineered for your daily motion.</p>
+        <a href="#store" class="lifestyle-btn-action">EXPLORE COLLECTION</a>
+      </div>
+
+      <!-- Right Column: Asymmetric Collage Image Grid (Clean Full-Bleed Photos) -->
+      <div class="lifestyle-photo-mosaic">
+        <div class="mosaic-item item-top-left" style="background-image: url('assets/cat_running_bg.png');"></div>
+        <div class="mosaic-item item-tall-right" style="background-image: url('assets/cat_lifestyle_bg.png');"></div>
+        <div class="mosaic-item item-large-center" style="background-image: url('assets/cat_training_bg.png');"></div>
+        <div class="mosaic-item item-bottom-right" style="background-image: url('assets/cat_basketball_bg.png');"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION DIVIDER 3: MARQUEE TICKER TAPE
+       ========================================================================== -->
+  <div class="marquee-divider-strip alt-strip">
+    <div class="marquee-track reverse-track">
+      <div class="marquee-content">
+        <span>EXCLUSIVE DROP</span> <span class="accent-slash">///</span>
+        <span>ELEVATE FOOTWEAR</span> <span class="accent-slash">///</span>
+        <span>PRECISION CUSHIONING</span> <span class="accent-slash">///</span>
+        <span>PRO ATHLETE APPROVED</span> <span class="accent-slash">///</span>
+        <span>LIMITED EDITION</span> <span class="accent-slash">///</span>
+        <span>EXCLUSIVE DROP</span> <span class="accent-slash">///</span>
+        <span>ELEVATE FOOTWEAR</span> <span class="accent-slash">///</span>
+        <span>PRECISION CUSHIONING</span> <span class="accent-slash">///</span>
+        <span>PRO ATHLETE APPROVED</span> <span class="accent-slash">///</span>
+        <span>LIMITED EDITION</span> <span class="accent-slash">///</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       EDITORIAL SPOTLIGHT & NEW ARRIVALS ("FOOTWEAR OF THE WEEK")
+       ========================================================================== -->
+  <section class="spotlight-arrivals-section" id="spotlight">
+    <div class="spotlight-container">
+      
+      <!-- Top Part: Asymmetric Split Banners -->
+      <div class="spotlight-split-grid">
+        
+        <!-- Left Banner: Footwear of the Week -->
+        <div class="spotlight-card spotlight-left">
+          <span class="spotlight-bg-watermark">NEW</span>
+          <div class="spotlight-img-box">
+            <img src="assets/Footwareoftheweek.png" alt="Footwear of the Week">
+          </div>
+          <div class="spotlight-content">
+            <h3 class="spotlight-card-title">Footwear of The WeeK</h3>
+            <a href="#store" class="spotlight-shop-link">Shop Now <span class="line-arrow">———</span></a>
+          </div>
+        </div>
+
+        <!-- Right Banner: New Collection (Elevate Phantom MP4 Video - Plays once and stays on final frame) -->
+        <div class="spotlight-card spotlight-right">
+          <div class="spotlight-video-box">
+            <video src="assets/Elevate Phantom.mp4" autoplay muted playsinline class="spotlight-video"></video>
+          </div>
+          <div class="spotlight-top-tag">New Collection</div>
+          <span class="spotlight-bottom-watermark">ARRIVALS</span>
+        </div>
+
+      </div>
+
+      <!-- Bottom Part: New Arrivals Minimalist Grid -->
+      <div class="new-arrivals-box">
+        <h3 class="new-arrivals-title">New Arrivals</h3>
+        
+        <div class="new-arrivals-grid">
+          
+          <div class="arrival-card">
+            <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+            <span class="bs-badge">NEW</span>
+            <div class="arrival-img-box">
+              <img src="assets/shoe_crimson.png" alt="Elevate Solar Red">
+            </div>
+            <div class="arrival-info">
+              <h4 class="arrival-name">Elevate Solar Red</h4>
+              <p class="arrival-desc">Performance Running Edition</p>
+              <div class="arrival-bottom-row">
+                <span class="arrival-price">$290.00</span>
+                <button class="bs-cart-btn" aria-label="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="arrival-card">
+            <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+            <span class="bs-badge sale-badge">TOP RATED</span>
+            <div class="arrival-img-box">
+              <img src="assets/Ele_pulsepro.png" alt="Elevate Stealth Black">
+            </div>
+            <div class="arrival-info">
+              <h4 class="arrival-name">Elevate Stealth Black</h4>
+              <p class="arrival-desc">Desert Distance Cushion</p>
+              <div class="arrival-bottom-row">
+                <span class="arrival-price">$270.00</span>
+                <button class="bs-cart-btn" aria-label="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="arrival-card">
+            <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+            <span class="bs-badge">NEW</span>
+            <div class="arrival-img-box">
+              <img src="assets/Ele_courthigh.png" alt="Elevate Glacial Blue">
+            </div>
+            <div class="arrival-info">
+              <h4 class="arrival-name">Elevate Glacial Blue</h4>
+              <p class="arrival-desc">Glacial High-Top Edition</p>
+              <div class="arrival-bottom-row">
+                <span class="arrival-price">$280.00</span>
+                <button class="bs-cart-btn" aria-label="Add to Cart"><i class="fa-solid fa-cart-shopping"></i></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       TECHNOLOGIES FOR YOUR MOTION (6 FEATURE CARDS)
+       ========================================================================== -->
+  <section class="motion-tech-section">
+    <div class="motion-tech-container">
+      <h2 class="motion-tech-title">TECHNOLOGIES FOR YOUR MOTION</h2>
+      
+      <div class="motion-tech-grid">
+        
+        <div class="motion-card">
+          <div class="motion-icon"><i class="fa-solid fa-shoe-prints"></i></div>
+          <h4 class="motion-name">AERO FOAM</h4>
+          <p class="motion-desc">Ultra-light foam matrix for maximum impact absorption.</p>
+        </div>
+
+        <div class="motion-card">
+          <div class="motion-icon"><i class="fa-solid fa-person-running"></i></div>
+          <h4 class="motion-name">FLEX MOTION</h4>
+          <p class="motion-desc">Flexible articulation zones for natural foot movement.</p>
+        </div>
+
+        <div class="motion-card">
+          <div class="motion-icon"><i class="fa-solid fa-compass"></i></div>
+          <h4 class="motion-name">GRIP CONTROL</h4>
+          <p class="motion-desc">Reliable traction compound on all wet and dry surfaces.</p>
+        </div>
+
+        <div class="motion-card">
+          <div class="motion-icon"><i class="fa-solid fa-wind"></i></div>
+          <h4 class="motion-name">BREATH TECH</h4>
+          <p class="motion-desc">Air-permeable Primeknit mesh for all-weather comfort.</p>
+        </div>
+
+        <div class="motion-card">
+          <div class="motion-icon"><i class="fa-solid fa-shield"></i></div>
+          <h4 class="motion-name">HEEL SUPPORT</h4>
+          <p class="motion-desc">Anatomical heel cup for unwavering stride stability.</p>
+        </div>
+
+        <div class="motion-card">
+          <div class="motion-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h4 class="motion-name">ECO MATERIALS</h4>
+          <p class="motion-desc">Sustainably sourced recycled yarns for a green future.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VIP CLUB MEMBER BANNER
+       ========================================================================== -->
+  <section class="vip-club-section">
+    <div class="vip-club-container">
+      
+      <!-- Left: 3D Rendered Membership Card Graphic -->
+      <div class="vip-card-graphic">
+        <div class="vip-card-chip"></div>
+        <span class="vip-card-brand">ADIDAS ELEVATE</span>
+        <span class="vip-card-tier">CLUB VIP MEMBER</span>
+      </div>
+
+      <!-- Center: Club Details & Perks -->
+      <div class="vip-club-info">
+        <h3 class="vip-club-title">Join the ADIDAS ELEVATE CLUB</h3>
+        <p class="vip-club-desc">Unlock exclusive drops, early access to new releases, personal rewards & custom concierge perks.</p>
+        
+        <div class="vip-perks-row">
+          <div class="vip-perk-item">
+            <i class="fa-solid fa-percent"></i>
+            <span>5% Cashback on purchase</span>
+          </div>
+          <div class="vip-perk-item">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            <span>Early drop access</span>
+          </div>
+          <div class="vip-perk-item">
+            <i class="fa-solid fa-gift"></i>
+            <span>Exclusive gifts</span>
+          </div>
+          <div class="vip-perk-item">
+            <i class="fa-solid fa-cake-candles"></i>
+            <span>Birthday rewards</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Action CTA -->
+      <div class="vip-club-action">
+        <button class="btn-vip-join" id="btnJoinClub">BECOME A MEMBER</button>
+        <span class="vip-free-note">100% Free Membership</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MODERN EDITORIAL CATALOG SHOWCASE ("NEW COLLECTION FOR YOUR RHYTHM")
+       ========================================================================== -->
+  <section class="editorial-catalog-section" id="store">
+    <div class="editorial-catalog-container">
+      
+      <!-- Top Editorial Header Row -->
+      <div class="editorial-header-row">
+        <h2 class="editorial-main-title">NEW COLLECTION<br>FOR YOUR RHYTHM</h2>
+        <p class="editorial-header-desc">High-tech sneakers for running, training, and city movement. Select your colorway and push your performance forward.</p>
+        <button class="editorial-btn-all" id="btnExploreAll">ALL MODELS <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+      </div>
+
+      <!-- 3 Editorial Product Cards Grid matching Reference Image -->
+      <div class="editorial-cards-grid">
+        
+        <!-- Card 1: Elevate Phantom -->
+        <div class="editorial-card">
+          <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+          <span class="bs-badge">NEW</span>
+          <div class="editorial-card-img-wrapper">
+            <img src="assets/Ele_Phantom.png" alt="Elevate Phantom">
+          </div>
+          <div class="editorial-card-info">
+            <h3 class="editorial-card-name">Elevate Phantom</h3>
+            <p class="editorial-card-category">3D Lattice Running</p>
+            <div class="editorial-card-bottom">
+              <span class="editorial-card-price">$300.00</span>
+              <button class="bs-cart-btn" data-select-variant="phantom" aria-label="View Elevate Phantom">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Elevate Dune -->
+        <div class="editorial-card">
+          <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+          <span class="bs-badge sale-badge">LIMITED</span>
+          <div class="editorial-card-img-wrapper">
+            <img src="assets/Ele_dune.png" alt="Elevate Dune">
+          </div>
+          <div class="editorial-card-info">
+            <h3 class="editorial-card-name">Elevate Dune</h3>
+            <p class="editorial-card-category">Desert Sand Edition</p>
+            <div class="editorial-card-bottom">
+              <span class="editorial-card-price">$280.00</span>
+              <button class="bs-cart-btn" data-select-variant="dune" aria-label="View Elevate Dune">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Elevate Slate -->
+        <div class="editorial-card">
+          <button class="wishlist-btn" aria-label="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+          <span class="bs-badge">HOT</span>
+          <div class="editorial-card-img-wrapper">
+            <img src="assets/Ele_slate.png" alt="Elevate Slate">
+          </div>
+          <div class="editorial-card-info">
+            <h3 class="editorial-card-name">Elevate Slate</h3>
+            <p class="editorial-card-category">Urban Stealth Edition</p>
+            <div class="editorial-card-bottom">
+              <span class="editorial-card-price">$280.00</span>
+              <button class="bs-cart-btn" data-select-variant="slate" aria-label="View Elevate Slate">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MODERN LIFESTYLE BANNER SECTION ("DISCOVER THE CITY IN STYLE & COMFORT")
+       ========================================================================== -->
+  <!-- ==========================================================================
+       ATHLETE REVIEWS & RATINGS SECTION (REPLACED LIFESTYLE SECTION)
+       ========================================================================== -->
+  <!-- ==========================================================================
+       ATHLETE REVIEWS & RATINGS SECTION (FULL-WIDTH CONTINUOUS MARQUEE CAROUSEL)
+       ========================================================================== -->
+  <!-- ==========================================================================
+       ATHLETE REVIEWS & RATINGS SECTION (EXACT DESIGN MATCH TO REFERENCE)
+       ========================================================================== -->
+  <!-- ==========================================================================
+       ATHLETE REVIEWS SECTION (EXACT 100% REPLICATION OF REFERENCE IMAGE 2)
+       ========================================================================== -->
+  <!-- ==========================================================================
+       ATHLETE REVIEWS SECTION (CONTINUOUS AUTO-RUNNING MARQUEE SPEECH-BUBBLE CARDS)
+       ========================================================================== -->
+  <!-- ==========================================================================
+       ATHLETE REVIEWS & RATINGS SECTION (RESTORED CONTINUOUS AUTO-MARQUEE)
+       ========================================================================== -->
+  <!-- ==========================================================================
+       ATHLETE REVIEWS SECTION (MODERN SPEECH-BUBBLE CONTINUOUS AUTO-MARQUEE)
+       ========================================================================== -->
+  <section class="athlete-reviews-section" id="reviews">
+    
+    <!-- Centered Header -->
+    <div class="reviews-header-centered">
+      <span class="reviews-gold-tag">Testimonial</span>
+      <h2 class="reviews-main-title">BUILT FOR<br><span class="highlight-gold">THE EVERYDAY ATHLETE.</span></h2>
+    </div>
+
+    <!-- Full Width Marquee Track (Infinite Seamless Auto-Scroll) -->
+    <div class="reviews-marquee-viewport">
+      <div class="reviews-marquee-track">
+        
+        <!-- CARD 1 -->
+        <div class="review-card-bubble">
+          <div class="card-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="review-quote-text">Impressed by the performance and biomechanical precision. Zero heel impact vibration on long runs!</p>
+          <div class="card-author-tab">
+            <div class="author-avatar-img">MV</div>
+            <div class="author-details">
+              <h4 class="author-name-text">Marcus Vance</h4>
+              <span class="author-handle-text">@marcusvance</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="review-card-bubble">
+          <div class="card-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="review-quote-text">A seamless experience from start to finish. Highly recommend the Phantom elevate series!</p>
+          <div class="card-author-tab">
+            <div class="author-avatar-img">ER</div>
+            <div class="author-details">
+              <h4 class="author-name-text">Elena Rostova</h4>
+              <span class="author-handle-text">@elenarostova</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="review-card-bubble">
+          <div class="card-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="review-quote-text">Reliable and trustworthy. Sleek enough for urban streetwear, responsive enough for 10k races!</p>
+          <div class="card-author-tab">
+            <div class="author-avatar-img">JC</div>
+            <div class="author-details">
+              <h4 class="author-name-text">Jane Cooper</h4>
+              <span class="author-handle-text">@janecooper</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="review-card-bubble">
+          <div class="card-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="review-quote-text">Unrivaled lateral stability during heavy training sets. The continental rubber grips like glue.</p>
+          <div class="card-author-tab">
+            <div class="author-avatar-img">SA</div>
+            <div class="author-details">
+              <h4 class="author-name-text">Sophia Al-Mansoor</h4>
+              <span class="author-handle-text">@sophia_am</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="review-card-bubble">
+          <div class="card-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="review-quote-text">Hyper-breathable 3D lattice upper keeps feet dry even in heavy rain. Absolute masterclass!</p>
+          <div class="card-author-tab">
+            <div class="author-avatar-img">LO</div>
+            <div class="author-details">
+              <h4 class="author-name-text">Liam O'Connor</h4>
+              <span class="author-handle-text">@liamoconnor</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- DUPLICATE SET FOR INFINITE SEAMLESS LOOP -->
+        <div class="review-card-bubble">
+          <div class="card-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="review-quote-text">Impressed by the performance and biomechanical precision. Zero heel impact vibration on long runs!</p>
+          <div class="card-author-tab">
+            <div class="author-avatar-img">MV</div>
+            <div class="author-details">
+              <h4 class="author-name-text">Marcus Vance</h4>
+              <span class="author-handle-text">@marcusvance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card-bubble">
+          <div class="card-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="review-quote-text">A seamless experience from start to finish. Highly recommend the Phantom elevate series!</p>
+          <div class="card-author-tab">
+            <div class="author-avatar-img">ER</div>
+            <div class="author-details">
+              <h4 class="author-name-text">Elena Rostova</h4>
+              <span class="author-handle-text">@elenarostova</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card-bubble">
+          <div class="card-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="review-quote-text">Reliable and trustworthy. Sleek enough for urban streetwear, responsive enough for 10k races!</p>
+          <div class="card-author-tab">
+            <div class="author-avatar-img">JC</div>
+            <div class="author-details">
+              <h4 class="author-name-text">Jane Cooper</h4>
+              <span class="author-handle-text">@janecooper</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card-bubble">
+          <div class="card-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="review-quote-text">Unrivaled lateral stability during heavy training sets. The continental rubber grips like glue.</p>
+          <div class="card-author-tab">
+            <div class="author-avatar-img">SA</div>
+            <div class="author-details">
+              <h4 class="author-name-text">Sophia Al-Mansoor</h4>
+              <span class="author-handle-text">@sophia_am</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card-bubble">
+          <div class="card-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+          <p class="review-quote-text">Hyper-breathable 3D lattice upper keeps feet dry even in heavy rain. Absolute masterclass!</p>
+          <div class="card-author-tab">
+            <div class="author-avatar-img">LO</div>
+            <div class="author-details">
+              <h4 class="author-name-text">Liam O'Connor</h4>
+              <span class="author-handle-text">@liamoconnor</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Centered Pagination Pill Indicators -->
+    <div class="reviews-pagination-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+  </section>
+
+  <!-- ==========================================================================
+       MODERN NEWSLETTER BANNER ("BE FIRST. BE IN MOTION." - EXACT MATCH TO IMAGE 2)
+       ========================================================================== -->
+  <section class="editorial-community-section">
+    <div class="editorial-community-container">
+      
+      <!-- Left Content Panel -->
+      <div class="community-content-panel">
+        
+        <span class="community-gold-tag">BE FIRST.</span>
+        <h2 class="community-main-headline">
+          BE IN <span class="highlight-gold">MOTION.</span>
+        </h2>
+        <p class="community-subtext">Subscribe to news and get instant access to new arrivals & exclusive drops.</p>
+
+        <!-- Combined Email Input Form -->
+        <form class="community-form-pill" id="modernSubscribeForm">
+          <input type="email" placeholder="Enter your email address" required>
+          <button type="submit" class="btn-community-subscribe">SUBSCRIBE <i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+
+        <!-- Stay Connected Social Links -->
+        <div class="community-socials-row">
+          <span class="socials-tag-text">STAY CONNECTED</span>
+          <div class="socials-circles-group">
+            <a href="#" class="social-circle-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-circle-btn" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-circle-btn" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-circle-btn" aria-label="Telegram"><i class="fa-solid fa-paper-plane"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER (EXACT MATCH TO REFERENCE IMAGE 2 WITH PUBLIC/LOGO_SN.PNG)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      
+      <div class="footer-top">
+        
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <img src="assets/logo_sn2.png" alt="Adidas Logo" class="footer-logo">
+          <p class="footer-brand-desc">Adidas Elevate pushes the boundaries of performance footwear through additive manufacturing and biomechanical lattice engineering.</p>
+          <div class="footer-brand-subtag">
+            <span class="footer-gold-line"></span>
+            <span>ENGINEERED FOR SUPREMACY</span>
+          </div>
+        </div>
+
+        <!-- Colorways Column -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">COLORWAYS</h4>
+          <ul class="footer-link-list">
+            <li><a href="#" data-switch="phantom">Elevate Phantom</a></li>
+            <li><a href="#" data-switch="dune">Elevate Dune</a></li>
+            <li><a href="#" data-switch="slate">Elevate Slate</a></li>
+            <li><a href="#" data-switch="frost">Elevate Frost</a></li>
+          </ul>
+        </div>
+
+        <!-- Navigation Column -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">NAVIGATION</h4>
+          <ul class="footer-link-list">
+            <li><a href="#store">Store</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Concierge</a></li>
+            <li><a href="#">Size Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- Join The Club Column -->
+        <div class="footer-links-col">
+          <h4 class="footer-col-title">JOIN THE CLUB</h4>
+          <p class="footer-club-desc">Subscribe for early access to limited colorway drops.</p>
+          <form class="footer-newsletter-form-pill" id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-arrow-right"></i></button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="footer-copyright">&copy; 2024 adidas Elevate. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <span class="divider">|</span>
+          <a href="#">Terms of Use</a>
+          <span class="divider">|</span>
+          <a href="#">Shipping & Returns</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODALS & CART DRAWER
+       ========================================================================== -->
+
+  <!-- Shopping Cart Drawer Overlay -->
+  <div class="cart-drawer-overlay" id="cartOverlay" aria-hidden="true">
+    <div class="cart-drawer" id="cartDrawer">
+      <div class="cart-drawer-header">
+        <h3>YOUR CART (<span id="cartDrawerCount">2</span>)</h3>
+        <button class="close-drawer-btn" id="closeCartBtn" aria-label="Close Cart"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="cart-drawer-body" id="cartItemsContainer">
+        <!-- Cart items dynamically rendered via script.js -->
+      </div>
+      <div class="cart-drawer-footer">
+        <div class="cart-subtotal-row">
+          <span>Subtotal</span>
+          <span class="subtotal-amount" id="cartSubtotal">$580.00</span>
+        </div>
+        <div class="cart-shipping-row">
+          <span>Shipping</span>
+          <span class="free-shipping">FREE</span>
+        </div>
+        <button class="btn-checkout" id="btnCheckout">PROCEED TO CHECKOUT</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- VIP Reservation Modal -->
+  <div class="modal-overlay" id="reserveModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeReserveBtn" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      <span class="modal-tag">LIMITED VIP ACCESS</span>
+      <h3 class="modal-title">Reserve Your Elevate Pair</h3>
+      <p class="modal-desc">Guarantee your size from the upcoming 3D-lattice production drop.</p>
+      
+      <form id="reserveForm">
+        <div class="form-group">
+          <label>SELECT COLORWAY</label>
+          <div class="colorway-mini-selector" id="modalColorwaySelector">
+            <!-- Dynamic Colorway options populated in JS -->
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>SELECT US SIZE</label>
+          <div class="size-buttons-grid">
+            <button type="button" class="size-btn" data-size="US 8">8</button>
+            <button type="button" class="size-btn" data-size="US 8.5">8.5</button>
+            <button type="button" class="size-btn" data-size="US 9">9</button>
+            <button type="button" class="size-btn" data-size="US 9.5">9.5</button>
+            <button type="button" class="size-btn active" data-size="US 10">10</button>
+            <button type="button" class="size-btn" data-size="US 10.5">10.5</button>
+            <button type="button" class="size-btn" data-size="US 11">11</button>
+            <button type="button" class="size-btn" data-size="US 11.5">11.5</button>
+            <button type="button" class="size-btn" data-size="US 12">12</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reserveEmail">YOUR EMAIL ADDRESS</label>
+          <input type="email" id="reserveEmail" placeholder="name@example.com" required>
+        </div>
+
+        <button type="submit" class="btn-submit-reserve">CONFIRM RESERVATION</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- General Info Modal (About / Contact / Specs) -->
+  <div class="modal-overlay" id="infoModal" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="closeInfoModalBtn" aria-label="Close Modal"><i class="fa-solid fa-xmark"></i></button>
+      <span class="modal-tag" id="infoModalTag">DETAILS</span>
+      <h3 class="modal-title" id="infoModalTitle">Information</h3>
+      <div class="modal-desc" id="infoModalBody">
+        <!-- Content injected dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll To Top (Up) Button -->
+  <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top" title="Scroll to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Core JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
