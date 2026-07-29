@@ -1,3 +1,5 @@
+<div align="center">
+
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
@@ -12,6 +14,17 @@
 
 An immersive, single-page 3D footwear showcase built for **Adidas Elevate** — featuring dynamic colorway theming, parallax depth effects, and a fully interactive shopping experience, crafted entirely in vanilla HTML, CSS, and JavaScript.
 
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JAVASCRIPT-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![ES6+](https://img.shields.io/badge/ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Font Awesome](https://img.shields.io/badge/FONT_AWESOME-528DD7?style=for-the-badge&logo=fontawesome&logoColor=white)
+![Google Fonts](https://img.shields.io/badge/GOOGLE_FONTS-4285F4?style=for-the-badge&logo=googlefonts&logoColor=white)
+![License](https://img.shields.io/badge/LICENSE-555555?style=for-the-badge)
+![MIT](https://img.shields.io/badge/MIT-FF5722?style=for-the-badge)
+
+</div>
+
 ## 📸 Preview
 
 ![Adidas Elevate Preview](./assets/preview_adidas.png)
@@ -20,6 +33,7 @@ An immersive, single-page 3D footwear showcase built for **Adidas Elevate** — 
 
 - **Dynamic Colorway Themes** — Instantly switch between Elevate Phantom, Elevate Dune, Elevate Slate, and Elevate Frost, each with its own accent palette, background art, and hero imagery.
 - **3D Parallax & Depth Effects** — Interactive shoe pop-out colorway cards with layered depth shadows and smooth motion for a tactile, premium feel.
+- **Video Spotlight** — Autoplaying, muted HTML5 video showcase for the Elevate Phantom colorway.
 - **Cinematic Hero Slider** — Auto-advancing slide track with progress indicators and slide numbering for a storefront-style landing experience.
 - **Ultra-Responsive Mobile UX** — Dedicated mobile drawer navigation, responsive typography, and glassmorphic UI elements tuned for every screen size.
 - **Interactive Modals & Drawer** — VIP pair reservation modal, product info modal with colorway selector, and a fully functional shopping cart drawer with live subtotal.
@@ -28,10 +42,11 @@ An immersive, single-page 3D footwear showcase built for **Adidas Elevate** — 
 
 ## 🛠️ Technology Stack
 
-- **HTML5** — Semantic, accessible markup
+- **HTML5** — Semantic, accessible markup with native `<video>` for the Phantom colorway spotlight
 - **CSS3** — Vanilla design system with glassmorphism, custom properties, and responsive layout
-- **Vanilla JavaScript** — Interactive state management and theme engine (no frameworks, no build step)
-- **Font Awesome** — Icon system
+- **Vanilla JavaScript (ES6+)** — Interactive state management and theme engine (no frameworks, no build step)
+- **Font Awesome 6.4.0** — Icon system, loaded via cdnjs
+- **Google Fonts** — Plus Jakarta Sans, loaded via `fonts.googleapis.com`
 
 ## 📁 Project Structure
 
