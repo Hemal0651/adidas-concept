@@ -27,7 +27,7 @@ An immersive, single-page 3D footwear showcase built for **Adidas Elevate** — 
 
 ## 📸 Preview
 
-![Adidas Elevate Preview](./assets/preview_adidas.png)
+![Adidas Elevate Preview](./assets/preview-real.png)
 
 ## 🚀 Features
 
